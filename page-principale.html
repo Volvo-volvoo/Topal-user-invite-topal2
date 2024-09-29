@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Investissement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .investment-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .vip-level {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: left;
+        }
+        .vip-level h2 {
+            color: #FF5722;
+        }
+        .vip-level p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .invest-button {
+            background-color: #FF5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .invest-button:hover {
+            background-color: #E64A19;
+        }
+        .message-box {
+            display: none;
+            background-color: #ffe6e6;
+            border: 2px solid #ff0000;
+            color: #ff0000;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .fixed-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 5px 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .fixed-footer a {
+            background-color: #28a745;
+            border: none;
+            border-radius: 50%;
+            padding: 6px;
+            color: white;
+            font-size: 10px;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .fixed-footer a:hover {
+            transform: scale(1.05);
+            background-color: #218838;
+        }
+
+        .fixed-footer a i {
+            font-size: 14px;
+        }
+
+        .fixed-footer a span {
+            font-size: 8px;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Investissez dans nos niveaux VIP</h1>
+    <div class="investment-container">
+
+        <div class="vip-level">
+            <h2>VIP 1 - 6.000 FCFA</h2>
+            <p>Revenus quotidien : 700 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 35.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg1')">Investir</button>
+            <div id="msg1" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 2 - 15.000 FCFA</h2>
+            <p>Revenus quotidien : 1.000 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 50.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg2')">Investir</button>
+            <div id="msg2" class="message-box">Investir avec succès </div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 3 - 30.000 FCFA</h2>
+            <p>Revenus quotidien : 2.000 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 100.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg3')">Investir</button>
+            <div id="msg3" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 4 - 50.000 FCFA</h2>
+            <p>Revenus quotidien : 5.500 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 275.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg4')">Investir</button>
+            <div id="msg4" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 5 - 110.000 FCFA</h2>
+            <p>Revenus quotidien : 7.500 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 375.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg5')">Investir</button>
+            <div id="msg5" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 6 - 210.000 FCFA</h2>
+            <p>Revenus quotidien : 9.500 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 475.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg6')">Investir</button>
+            <div id="msg6" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 7 - 450.000 FCFA</h2>
+            <p>Revenus quotidien : 15.500 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 775.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg7')">Investir</button>
+            <div id="msg7" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 8 - 850.000 FCFA</h2>
+            <p>Revenus quotidien : 25.000 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 1.250.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg8')">Investir</button>
+            <div id="msg8" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 9 - 1.010.000 FCFA</h2>
+            <p>Revenus quotidien : 50.000 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 2.500.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg9')">Investir</button>
+            <div id="msg9" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 10 - 2.345.000 FCFA</h2>
+            <p>Revenus quotidien : 100.000 FCFA</p>
+            <p>Cycle : 50 jours</p>
+            <p>Revenus total : 5.000.000 FCFA</p>
+            <button class="invest-button" onclick="showMessage('msg10')">Investir</button>
+            <div id="msg10" class="message-box">Solde insuffisant pour investir à ce niveau</div>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 11 - Bientôt Disponible</h2>
+        </div>
+        
+        <div class="vip-level">
+            <h2>VIP 12 - Bientôt Disponible</h2>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 13 - Bientôt Disponible</h2
+            </div>
+
+        <div class="vip-level">
+            <h2>VIP 14 - Bientôt Disponible</h2>
+        </div>
+
+        <div class="vip-level">
+            <h2>VIP 15 - Bientôt Disponible</h2>
+        </div>
+
+    </div>
+
+    <div class="fixed-footer">
+      <!-- Boutons fixes en bas de page -->
+  <div class="fixed-footer">
+    <a href="page-principale.html" title="Home">
+      <i>🎨</i><span>investir</span>
+    </a>
+    <a href="historique.html" title="Historique">
+      <i>🗑</i><span>Historique</span>
+    </a>
+    <a href="equipe.html" title="Team">
+      <i>🚹</i><span>Team</span>
+    </a>
+    <a href="mon-compte.html" title="mon-compte.html">
+      <i>🪙</i><span>Compte</span>
+    </a>
+  </div>
+
+    <script>
+        function showMessage(id) {
+            var messageBox = document.getElementById(id);
+            messageBox.style.display = "block";
+            setTimeout(function() {
+                messageBox.style.display = "none";
+            }, 3000);
+        }
+    </script>
+
+</body>
+</html>
+           
